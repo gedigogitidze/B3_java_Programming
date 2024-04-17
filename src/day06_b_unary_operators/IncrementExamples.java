@@ -17,7 +17,7 @@ public class IncrementExamples {
         System.out.println(x); //3
 
         System.out.println(++x); //4 -----> because it is PRE INCREMENT, it will increase it first and than use it
-                                // x=x4
+                                // x=x+4
 
         System.out.println(x++); // 4 it is POST INCREMENT, it will be used first and then increment
                                 // x is now 5
