@@ -87,11 +87,25 @@ public class ArrayUtil {
         //                                                  {1,2,3, _ };
         newArr [newArr.length-1] = elementToAdd;
 
+
         return newArr;
     }
 
-    //TODO: crate a reusable method that takes 2 int array and returns one array combined
+    /**
+     * This method returns new array with combined element from two int arrays
+     * @param arr1 is an array where we will add an element to the beggining
+     * @param arr2 is the element we will add to the end
+     * @return new array with already combined two arrays
+     */
+    public static int [] addElemInArr(int [] arr1, int [] arr2){ // {1,2,3,} - {4,5}
+        int [] newArr =Arrays.copyOf(arr1,arr1.length+arr2.length); // {1,2,3}
+        for (int i = arr1.length; i < newArr.length; i++) {
 
+            newArr[i] = arr2[i-arr1.length]; // newArr[5] = arr2 [5-5];| newArr[6] = arr2[6-5];
+        }
+
+        return newArr;
+    }
 
     /**
      * This method finds the first matched elements index
