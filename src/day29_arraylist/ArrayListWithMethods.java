@@ -24,7 +24,7 @@ public class ArrayListWithMethods {
 
 
         ArrayList <Integer> nums = new ArrayList<>( Arrays.asList(1, 2, 3, 4));
-        System.out.println( printList( nums ));
+       // System.out.println( printList( nums ));
 
 
     }
