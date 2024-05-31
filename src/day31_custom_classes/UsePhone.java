@@ -15,6 +15,10 @@ public class UsePhone {
         System.out.println(phone3);
 
 
+        Phone phone4 = new Phone("IPhone 14 pro", "Apple", 0, 0.0);
+        // This is just made to show that toString method can be modified the way you want. If you create object this way, the having if condition is not good approach. 
+
+
 
 
     }
