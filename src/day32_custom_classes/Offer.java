@@ -28,8 +28,8 @@ package day32_custom_classes;
 public class Offer {
     String location;
     String company;
-    double salary;
-    boolean isFullTime;
+    public double salary;
+   public  boolean isFullTime;
     int numOfPTO;
 
 
